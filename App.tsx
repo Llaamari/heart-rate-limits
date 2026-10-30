@@ -42,11 +42,11 @@ export default function App() {
       />
 
       <Text style={styles.result}>
-        Lower limit: 130.00 bpm
+        Lower limit: {lowerLimit.toFixed(2)} bpm
       </Text>
-
+      
       <Text style={styles.result}>
-        Upper limit: 170.00 bpm
+        Upper limit: {upperLimit.toFixed(2)} bpm
       </Text>
 
       <StatusBar style="auto" />
