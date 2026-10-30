@@ -7,6 +7,22 @@ import { useState } from 'react';
 // App feature
 export default function App() {
   const [age, setAge] = useState<string>('20');
+  // Converting text to a number
+  const ageNumber = age.trim() === ''
+    ? NaN
+    : Number(age.replace(',', '.'));
+
+  // Checking the validity of the input
+  const validAge = Number.isFinite(ageNumber);
+
+  // Calculate the heart rate limits
+  const lowerLimit = validAge
+    ? (220 - ageNumber) * 0.65
+    : 0;
+
+  const upperLimit = validAge
+    ? (220 - ageNumber) * 0.85
+    : 0;
   return (
     <View style={styles.container}>
       <Text style={styles.title}>
