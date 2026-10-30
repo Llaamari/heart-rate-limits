@@ -21,7 +21,8 @@ export default function App() {
       <TextInput
         style={styles.input}
         keyboardType="numeric"
-        defaultValue="20"
+        value={age}
+        onChangeText={setAge}
       />
 
       <Text style={styles.result}>
