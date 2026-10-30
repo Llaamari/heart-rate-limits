@@ -2,9 +2,11 @@
 // Import
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { useState } from 'react';
 
 // App feature
 export default function App() {
+  const [age, setAge] = useState<string>('20');
   return (
     <View style={styles.container}>
       <Text style={styles.title}>
