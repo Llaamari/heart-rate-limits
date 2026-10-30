@@ -1,7 +1,9 @@
 
+// Import
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 
+// App feature
 export default function App() {
   return (
     <View style={styles.container}>
@@ -13,6 +15,7 @@ export default function App() {
         Enter your age:
       </Text>
 
+      {/* Text input */}
       <TextInput
         style={styles.input}
         keyboardType="numeric"
@@ -33,6 +36,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+  // StyleSheet
   container: {
     flex: 1,
     backgroundColor: '#fff',
