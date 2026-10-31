@@ -41,7 +41,7 @@ yarn-error.*
 /ios
 /android
 
-# Local development tool files
+# Unnecessary development tool files from Expo
 .claude/
 CLAUDE.md
 AGENTS.md
